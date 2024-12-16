@@ -39,15 +39,18 @@ header {
     position: fixed;
     width: 100%;
     top: 0;
-    height: 3.5rem;
+    height: 4.5rem;
     z-index: 1000;
 }
 
 header .logo img {
-    height: 50px;
+    height: 70px;
+    /* width: 60px; */
     /* background: #000; */
     position: relative;
-    left: -.5rem;
+    left: 3.5rem;
+    top:0.2rem;
+    /* font-size: 50px; */
 }
 
 header nav ul {
@@ -101,7 +104,7 @@ header .cart {
     border-radius: 50px; /* Rounded corners */
     overflow: hidden; /* Prevents overflow of child elements */
     width: 40rem;
-    height: 2rem;
+    height: 2.5rem;
     background-color: white; /* White background */
     position: relative;
     left: -12rem;
@@ -187,7 +190,7 @@ header .cart {
     color: rgb(192, 192, 192);
     position: absolute;
     left: 2rem;
-    top: -0.2rem;
+    top: 0.5rem;
     /* background: #1ef406; */
     padding: .2rem;
     margin: 0rem;

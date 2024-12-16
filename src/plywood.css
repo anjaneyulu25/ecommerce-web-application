@@ -1,11 +1,11 @@
 
-/* Basic Reset */
+        /* Basic Reset */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
 }
-/* Header */
+   /* Header */
 header {
     background-color:#333333;
     padding: 1rem;
@@ -15,10 +15,11 @@ header {
     position: fixed;
     width: 100%;
     top: 0;
-    height: 4rem;
+    height: 4.5rem;
     z-index: 1000;
     position: relative;
 }
+
 .hamburger-menu {
     background: none;
     border: none;
@@ -28,7 +29,7 @@ header {
     color: rgb(192, 192, 192);
     position: absolute;
     left: 2rem;
-    /* top: rem; */
+    top: 0.5rem;
     /* background: #1ef406; */
     padding: .2rem;
     margin: 0rem;
