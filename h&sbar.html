@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>X</title>
+    <style>
+body{
+    background: #606060;
+}
+
+/* Header */
+header {
+    background-color:#333333;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    height: 3.5rem;
+    z-index: -10;
+}
+
+header .logo img {
+    height: 50px;
+    /* background: #000; */
+    /* width: 5rem; */
+    position: relative;
+    left: -.5rem;
+    z-index: -1;
+
+
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    position: relative;
+    left: 35rem;
+    top: -0.5rem;
+}
+/* #track{
+    /* background: #000; 
+} 
+*/
+#login{
+    border-radius: 8px;
+    background: #e7e7e7;
+    margin: 2px;
+    padding: 0.5rem ;
+    padding-left: 1rem;
+    display: block;
+    cursor: pointer;
+    width: 3.5rem;
+    position: relative;
+    top: -1rem;
+    color: #000000;
+
+}
+header .cart {
+    position: relative;
+}
+
+#cart-link {
+    color: white;
+    text-decoration: none;
+    background-color: #271d1d;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    position: relative;
+    right: 2rem;
+}
+
+
+/* search bar */
+.search-container {
+    display: flex;
+    align-items: center;
+    border: 1px solid #898989; /* Green border */
+    border-radius: 50px; /* Rounded corners */
+    overflow: hidden; /* Prevents overflow of child elements */
+    width: 40rem;
+    height: 2rem;
+    background-color: white; /* White background */
+    position: relative;
+    left: -12rem;
+    top: 1.9rem;
+}
+
+.search-input {
+    border: none; /* Remove default border */
+    padding: 10px 15px; /* Padding for input */
+    font-size: 16px; /* Font size */
+    outline: none; /* Remove outline on focus */
+    flex: 1; /* Allow input to take available space */
+}
+
+.search-button {
+    background-color: #2c2c2c; /* Green background */
+    color: white; /* White text */
+    border: none; /* Remove default border */
+    padding: 10px 20px; /* Padding for button */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-size: 16px; /* Font size */
+    transition: background-color 0.3s; /* Smooth transition */
+}
+
+.search-button:hover {
+    background-color: #171717; /* Darker green on hover */
+}
+        /* Sidebar */
+.sidebar {
+    position: absolute;
+    width: 250px;
+    background-color: #f4f4f4;
+    padding: 1rem;
+    border-right: 1px solid #ddd;
+    position: fixed;
+    height: 100%;
+    top: 5.5rem;
+    left: -300px; /* Start off-screen */
+    transition: left 0.2s ease-in; /* Smooth transition for left property */
+    z-index: 10;
+}
+
+.sidebar.active {
+    left: -250px; /* Move sidebar into view */
+}
+
+
+.sidebar.active {
+    transform: translateX(250px);
+}
+
+.sidebar h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin: 0.5rem 0;
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 600;
+}
+
+.sidebar ul li a:hover {
+    color: #4c2724;
+}
+
+/* Hamburger menu */
+.hamburger-menu {
+    background: none;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+    /* display: none; */
+    color: rgb(192, 192, 192);
+    position: absolute;
+    left: 2rem;
+    /* top: rem; */
+    /* background: #1ef406; */
+    padding: .2rem;
+    margin: 0rem;
+    /* box-shadow: 1px 0px 2px 0px ; */
+    z-index: 10;
+}
+
+@media (max-width: 768px) {
+    .hamburger-menu {
+        display: block;
+    }
+
+    header nav ul {
+        display: none;
+    }
+
+    .sidebar {
+        width: 200px;
+    }
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <button class="hamburger-menu" onclick="toggleSidebar()">☰</button>
+        <div class="logo">
+            <a href="./index.html">
+                <img src="./src/assets/logo.svg" alt="Logo">
+            </a>
+        </div>
+        <nav>
+            <div class="search-container">
+                <input type="text" placeholder="Search..." class="search-input">
+                <button class="search-button">Search</button>
+            </div>
+            <ul>
+                <li><a href="#products-heading">Explore</a></li>
+                <li><a href="#home" id="track">Track order</a></li>
+                <li ><a href="./login.html" id="login">Login</a></li>
+
+                
+            </ul>
+        </nav>
+        <div class="cart">
+        <a href="./account.html" id="cart-link">🛒 Cart ( )</a>
+        </div>
+    </header>
+    <aside class="sidebar">
+            <h3>Categories</h3>
+            <ul>
+                <li><a href="./plywood.html">Plywood</a></li>
+                
+                <li><a href="./electronics.html">Electronics</a></li>
+                <li><a href="#accessories">Hardware Tools</a></li>
+                <li><a href="#accessories">x</a></li>
+                <li><a href="#accessories">x</a></li>
+                <li><a href="./home-appliances.html">Home Appliances</a></li>
+            </ul>
+        </aside>
+        <script src="./src/scripts.js"></script>
+</body>
+</html>

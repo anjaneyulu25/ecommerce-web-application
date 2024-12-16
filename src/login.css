@@ -1,0 +1,161 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #f06, #0062ff, #f700ff);
+    background-size: 300% 300%;
+    animation: bgAnimation 5s infinite alternate;
+}
+
+/* Background Animation */
+@keyframes bgAnimation {
+    0% { background-position: 0% 0%; }
+    100% { background-position: 100% 100%; }
+}
+
+.login-container {
+    width: 150%;
+    max-width: 55rem;
+    background-color: #e0e0e0;
+    display: flex;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/* Left Side: Gradient & Text */
+.login-left {
+    flex: 1;
+    background: linear-gradient(135deg,  #453827,#d7ad8a);
+    color: #fff;
+    text-align: center;
+    padding: 50px 30px;
+    width: 28rem;
+}
+
+.login-left h1 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+
+.login-left p {
+    font-size: 1rem;
+    margin-bottom: 25px;
+}
+
+.shop-btn {
+    padding: 10px 20px;
+    background-color: #fff;
+    color: #3b82f6;
+    font-weight: 600;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s, color 0.3s;
+}
+
+.shop-btn:hover {
+    background-color: #1a1a1a;
+    color: #fff;
+}
+
+/* Right Side: Form */
+.login-right {
+    flex: 1;
+    padding: 40px 30px;
+    background: #f9fafb;
+    text-align: center;
+    width: 28rem;
+}
+
+.login-right h2 {
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+    color: #333;
+}
+
+.input-box {
+    margin-bottom: 20px;
+}
+
+.input-box input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    outline: none;
+    font-size: 1rem;
+    transition: border-color 0.3s;
+}
+
+.input-box input:focus {
+    border-color: #3b82f6;
+}
+
+.remember-forgot {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.remember-forgot a {
+    color: #3b82f6;
+    text-decoration: none;
+}
+
+.btn {
+    width: 100%;
+    padding: 10px;
+    background: linear-gradient(to right, #f6a53b, #4f462ebb);
+    color: #fff;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.btn:hover {
+        background: linear-gradient(to left, #f6a53b, #4f462eb4);
+
+}
+
+.signup-text {
+    margin-top: 20px;
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.signup-text a {
+    color: #3b82f6;
+    text-decoration: none;
+    font-weight: 600;
+}
+.login-img{
+    position: absolute;
+    left: 47rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0rem;
+    /* background: #000; */
+    width: 32rem;
+    height: 41.7rem;
+    border-radius: 0px 10px 10px 0;
+
+    background-image: url("./assets/door1.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
