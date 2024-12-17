@@ -421,8 +421,10 @@ footer a:hover {
 #top{
     position: absolute;
     right: 1rem;
-    top: 1.5rem;
-    background: #c1c1c1;
+    top: 1.45rem;
+    color: white;
+    text-decoration: none;
+    /* background: #c1c1c1; */
 }
 /* Utility Classes */
 .hidden {
